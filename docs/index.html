@@ -16,11 +16,13 @@
   *{box-sizing:border-box}
   html,body{margin:0;padding:0;background:var(--cream);color:var(--ink);
     font-family:'Inter',system-ui,-apple-system,sans-serif;
-    font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+    font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;
+    overflow-x:hidden;word-wrap:break-word;overflow-wrap:break-word;
+    -webkit-hyphens:auto;hyphens:auto}
   a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--orange);
     text-decoration-thickness:2px;text-underline-offset:3px}
   a:hover{color:var(--orange)}
-  main{max-width:700px;margin:0 auto;padding:40px 22px 72px}
+  main{width:100%;max-width:700px;margin:0 auto;padding:40px 22px 72px}
   header{border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:28px}
   .kicker{font-family:'Inter',sans-serif;font-size:12px;letter-spacing:.14em;
     text-transform:uppercase;color:var(--mute);margin-bottom:10px}
@@ -54,11 +56,20 @@
   .pill{display:inline-block;background:var(--cream);border:1px solid var(--line);
     border-radius:999px;padding:3px 11px;font-size:12.5px;color:var(--mute);
     margin:0 6px 6px 0}
-  @media (max-width:480px){
+  @media (max-width:600px){
     main{padding:28px 18px 60px}
-    h1{font-size:28px}
+    h1{font-size:28px;letter-spacing:-.015em}
     h2{font-size:21px}
+    h3{font-size:17px}
     .lead{font-size:17.5px}
+    body{font-size:16.5px;line-height:1.55}
+    .kicker{font-size:11.5px}
+    .card{padding:16px 16px}
+  }
+  @media (max-width:380px){
+    main{padding:24px 14px 52px}
+    h1{font-size:26px}
+    body{font-size:16px}
   }
 </style>
 </head>
