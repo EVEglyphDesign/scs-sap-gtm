@@ -7,6 +7,7 @@ Monotonic. It only grows. Every row states its inverse (EgD-BOOT-005).
 | 1.0 | L0 | Public engagement-model surface for Jeff Eden and Jason Porterfield (`docs/index.html`) | `git revert` the initial surface commit |
 | 1.1 | L1.1 | `EgD-EVE-DMZ-001` — DMZ-bound positioning note: `build/dmz/`, `docs/dmz/`, controlled PDF | `git rm -r build/dmz docs/dmz` and drop the README companion section |
 | 1.2 | L1.2 | `EgD-EVE-DI-001` — decision-intelligence briefing note: `build/di/`, `docs/di/`, controlled PDF, SCS-house-style DOCX, EgD tag and hash register | `git rm -r build/di docs/di registry/VERSIONS.md` and drop the README section |
+| 1.2.1 | L1.2.1 | `EgD-EVE-DI-001` rev 2 — "three lifecycle movements" corrected to "four lifecycle capabilities Gartner names"; all three surfaces and the hash register rebuilt | `git revert 318f05f` |
 
 ## Build order for `EgD-EVE-DI-001`
 
