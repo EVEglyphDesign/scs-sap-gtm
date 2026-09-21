@@ -34,6 +34,21 @@ that already sits outside the data-management organization's span of control.
 - Source and build: [`build/dmz/`](./build/dmz/)
 - Tested against the Hana Europe / EAT HAPPY consolidation brief `EgD-HAN-PNL-001`
 
+## Briefing note — EgD-EVE-DI-001
+
+[**EVE as an additive decision-intelligence layer**](https://eveglyphdesign.github.io/scs-sap-gtm/di/) —
+written for Jeff Eden against his eight-capability test for a legitimate Decision
+Intelligence layer, grouped into Gartner's four lifecycle capabilities with an honest
+status on each. Covers the SAP semantic extension (ACDOCA extended, never replaced) and
+the two go-to-market doors: publication through Lilian Corvington, and the dealer wedge on
+the edge of invested SAP and Salesforce estates.
+
+- Public page: <https://eveglyphdesign.github.io/scs-sap-gtm/di/>
+- Controlled PDF: <https://eveglyphdesign.github.io/scs-sap-gtm/di/EVEglyphDesign_EVE_Decision_Intelligence_Layer.pdf>
+- Steel Cloud Solutions house-style Word copy, carrying the EgD tag and content-hash register: <https://eveglyphdesign.github.io/scs-sap-gtm/di/SteelCloudSolutions_EVE_Decision_Intelligence_Layer.docx>
+- Source and build: [`build/di/`](./build/di/) — one copy source, three surfaces
+- Version arc and inverses: [`registry/VERSIONS.md`](./registry/VERSIONS.md)
+
 ## Operating canon
 
 This repository follows [`EgD-BOOT-001`](https://eveglyphdesign.github.io/eve-glyph-boot-contract/):

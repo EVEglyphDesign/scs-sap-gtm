@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>EVE as an additive decision-intelligence layer · EgD-EVE-DI-001</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#fdfaf4; --cream-2:#f7f2e7; --ink:#1a1a1a;
+    --line:#e7e1d3; --mute:#6b665c; --orange:#e87722;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--cream);color:var(--ink);
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;
+    overflow-x:hidden;word-wrap:break-word;overflow-wrap:break-word;
+    -webkit-hyphens:auto;hyphens:auto}
+  a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--orange);
+    text-decoration-thickness:2px;text-underline-offset:3px}
+  a:hover{color:var(--orange)}
+  main{width:100%;max-width:700px;margin:0 auto;padding:40px 22px 72px}
+  header{border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:28px}
+  .kicker{font-family:'Inter',sans-serif;font-size:12px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--mute);margin-bottom:10px}
+  h1{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:34px;
+    line-height:1.12;margin:0 0 10px;letter-spacing:-.01em}
+  .sub{font-family:'Fraunces',Georgia,serif;font-style:italic;font-weight:400;
+    color:var(--mute);font-size:18px;margin:0}
+  h2{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:23px;
+    margin:36px 0 10px;letter-spacing:-.005em}
+  h3{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:18px;
+    margin:18px 0 6px}
+  p{margin:0 0 14px}
+  .lead{font-size:19px;line-height:1.5}
+  .pull{font-family:'Fraunces',Georgia,serif;font-weight:500;font-size:22px;
+    line-height:1.28;color:var(--ink);border-left:3px solid var(--orange);
+    padding:6px 0 6px 16px;margin:22px 0}
+  .rule{height:1px;background:var(--line);margin:32px 0;border:0}
+  .card{background:var(--cream-2);border:1px solid var(--line);
+    border-radius:14px;padding:18px 20px;margin:18px 0}
+  .card h2{margin-top:0;font-size:19px}
+  .card h3{margin-top:0}
+  ul{margin:6px 0 14px;padding-left:20px}
+  li{margin:6px 0}
+  .accent{color:var(--orange);font-weight:600}
+  .num{font-family:'Fraunces',Georgia,serif;font-weight:600;color:var(--orange);
+    font-size:15px;letter-spacing:.02em;display:inline-block;min-width:34px}
+  .step{border-left:2px solid var(--orange);padding:2px 0 2px 14px;margin:12px 0}
+  .step p{margin:0}
+  .step .lbl{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:16px;
+    display:block;margin-bottom:2px}
+  .stamp{margin-top:44px;padding-top:18px;border-top:1px solid var(--line);
+    color:var(--mute);font-size:13px;line-height:1.55}
+  .stamp em{font-family:'Fraunces',Georgia,serif;font-style:italic}
+  .pill{display:inline-block;background:var(--cream);border:1px solid var(--line);
+    border-radius:999px;padding:3px 11px;font-size:12.5px;color:var(--mute);
+    margin:0 6px 6px 0}
+  @media (max-width:600px){
+    main{padding:28px 18px 60px}
+    h1{font-size:28px;letter-spacing:-.015em}
+    h2{font-size:21px}
+    h3{font-size:17px}
+    .lead{font-size:17.5px}
+    .pull{font-size:19px;padding-left:14px}
+    body{font-size:16.5px;line-height:1.55}
+    .kicker{font-size:11.5px}
+    .card{padding:16px 16px}
+  }
+  @media (max-width:380px){
+    main{padding:24px 14px 52px}
+    h1{font-size:26px}
+    body{font-size:16px}
+  }
+</style>
+<style>
+  table{width:100%;border-collapse:collapse;margin:14px 0 20px;font-size:15px}
+  th{background:var(--cream-2);text-align:left;font-weight:600;font-size:14px;
+    border-bottom:1px solid var(--line);padding:9px 10px}
+  td{border-bottom:1px solid var(--line);padding:9px 10px;vertical-align:top}
+  .deck{color:var(--mute);font-size:15px;margin:0 0 6px}
+  .srcs li{margin:5px 0;font-size:15px}
+  .dl{display:inline-block;background:var(--orange);color:var(--cream);
+    text-decoration:none;border-radius:999px;padding:10px 18px;font-weight:600;
+    font-size:15px;margin:6px 0 2px}
+  .dl:hover{color:var(--cream)}
+  @media (max-width:600px){table,th,td{font-size:14px}th,td{padding:8px 8px}}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="kicker">EVEglyphDesign · EgD-EVE-DI-001 · Briefing note</div>
+    <h1>EVE as an additive decision-intelligence layer</h1>
+    <p class="sub">The capability map, the semantic extension, and the two go-to-market doors</p>
+  </header>
+  <p class="deck">Briefing note for Jeff Eden, Steel Cloud Solutions. Prompted by his eight-capability test for a legitimate Decision Intelligence layer and its alignment to Gartner’s definition.</p>
+  <p class="deck">Prepared 20 September 2026 · EVEglyphDesign</p>
+  <p><a class="dl" href="./EVEglyphDesign_EVE_Decision_Intelligence_Layer.pdf">Read the controlled PDF</a></p>
+
+<h2>1. Conformance to the frame you set</h2>
+
+<p class="lead">Your eight capabilities are not aspirational for EVE. They are the shape of
+what is already <span class="accent">committed, versioned and public</span>. This section
+is written as a conformance statement against your list, grouped into the three lifecycle
+movements Gartner uses, with an <span class="accent">honest status on each</span> &mdash;
+because a capability claim that does not survive a reviewer's first question is worth less
+than an admitted gap.</p>
+
+<p>Gartner's definition: &ldquo;a practical discipline that advances decision making by
+explicitly understanding and engineering how decisions are made and how outcomes are
+evaluated, managed and improved via feedback&rdquo;
+(<a href="https://www.gartner.com/en/information-technology/glossary/decision-intelligence">Gartner IT Glossary</a>),
+extended on the 2025 AI Hype Cycle with &ldquo;by digitizing and modeling decisions as
+assets, DI bridges the insight-to-action gap&rdquo;
+(<a href="https://www.linkedin.com/posts/davidpidsley_decisionintelligence-activity-7338643731249590274-YrIw">David Pidsley, Gartner</a>).
+The platform definition names four lifecycle capabilities &mdash; decision modeling,
+orchestration, monitoring and governance
+(<a href="https://www.fico.com/blogs/what-decision-intelligence-software-and-should-you-invest-it">FICO on the Magic Quadrant</a>).
+Your eight map onto those four without remainder.</p>
+
+<p class="pull">The unit is the decision, not the dashboard. That is the part almost no
+consulting asset actually holds.</p>
+
+<table>
+  <thead>
+    <tr><th>Gartner lifecycle</th><th>Your capability</th><th>Status in EVE today</th></tr>
+  </thead>
+  <tbody>
+    <tr><td rowspan="3">Decision modeling</td><td>1. Decision definition</td><td>Met &mdash; decisions are named surfaces, not reports</td></tr>
+    <tr><td>2. Decision context</td><td>Met, scope-bounded &mdash; truck-only warehouse; telemetry absent</td></tr>
+    <tr><td>3. Decision logic</td><td>Met for rules and agent reasoning &mdash; no optimization or simulation engine</td></tr>
+    <tr><td rowspan="2">Decision orchestration</td><td>4. Decision authority</td><td>Met &mdash; human approves; authority is explicit, not implied</td></tr>
+    <tr><td>5. Action and execution</td><td>Partial by design &mdash; proposals out, no write path to a system of record</td></tr>
+    <tr><td rowspan="2">Decision monitoring</td><td>6. Outcome capture</td><td>Partial &mdash; committed results and tie-outs; per-decision outcome linking is the next build</td></tr>
+    <tr><td>7. Learning and optimization</td><td>Partial &mdash; versioned baselines and human tuning; no automated retraining loop</td></tr>
+    <tr><td>Decision governance</td><td>8. Governance and auditability</td><td>Met &mdash; the strongest layer; custody, provenance, hashes, defect register</td></tr>
+  </tbody>
+</table>
+
+<h3>Decision modeling &mdash; capabilities 1, 2 and 3</h3>
+
+<p><strong>1. Decision definition.</strong> EVE surfaces are built decision-first. The ATD
+Owner Console maps the 2026 Performance Measurement guide and the 60 Critical Operating
+Variables into seven owner tiles with threshold alarms and drill-down worklists. Tenant
+surfaces lead with three fixed decision tiles &mdash; unreturned voicemail, repeat caller,
+never reached &mdash; then capped worklists. The decision is the object on the page; the
+chart is incidental to it.</p>
+
+<p><strong>2. Decision context.</strong> Customer Sphere on Azure PostgreSQL holds
+Hawkins-owned customer, vehicle, service, warranty and interaction memory: PACCAR warranty
+registrations joined to CDK repair-order history on a VIN spine, coverage rules, and call
+metadata. Context carries its provenance &mdash; vectors retain origin and confidence
+rather than averaging conflicts away, and identity links stay reversible and
+human-approved. <em>Bounded honestly:</em> the current warehouse is truck-only, powersports
+contracts are quarantined rather than blended, and no SmartLINQ telemetry exists in the
+loaded extract set &mdash; it must land later as a distinct VIN-linked source.</p>
+
+<p><strong>3. Decision logic.</strong> The P1&ndash;P4 outreach queues combine open
+repair-order status, live coverage, contactability, and the earlier of calendar or
+projected-mileage expiry, with mileage rates derived from dated CDK odometer readings and
+ceilings from PACCAR registrations. That is deterministic, inspectable rule logic plus
+agent reasoning over documents. <em>Stated plainly:</em> EVE does not today run an
+optimization solver or a simulation engine. Where a reviewer expects those in the Gartner
+frame, the correct answer is that the logic layer is rules and reasoning, and the
+architecture admits a solver rather than already containing one.</p>
+
+<h3>Decision orchestration &mdash; capabilities 4 and 5</h3>
+
+<p><strong>4. Decision authority.</strong> Authority is declared per decision, not assumed.
+AI proposes under protocol; a named person approves a specific version; systems of record
+stay authoritative. Warranty Bot is a prompt for human review, never an authority, and the
+manufacturer system remains the decider on coverage. Flagged calls are review filters, not
+verdicts. Every artifact reachable by an AI surface has a named owner and has already passed
+independent four-eyes review.</p>
+
+<p><strong>5. Action and execution.</strong> Decisions leave EVE as worklist rows carrying
+an owner and a next action, returned into the tools the client already runs.
+<em>The limit is deliberate and is the asset:</em> EVE is DMZ-bound and holds no write
+authority to a system of record
+(<a href="https://eveglyphdesign.github.io/scs-sap-gtm/dmz/">EgD-EVE-DMZ-001</a>). Pushing
+into Salesforce or SAP is therefore a separately authorized capability, not an ambient one.
+A reviewer who reads that as a gap should be told it is the reason a client data
+organization will sign: the worst case of an EVE engagement is a discarded copy.</p>
+
+<h3>Decision monitoring and governance &mdash; capabilities 6, 7 and 8</h3>
+
+<p><strong>6. Outcome capture.</strong> Results are committed, not narrated: reconciled
+tie-outs, return-rate and closure-rate measurement kept separate where identity evidence is
+incomplete, and the repository as the record rather than the session. <em>Next build:</em>
+closing the loop row-by-row, so each P1&ndash;P4 row carries what happened after the call.
+That is the single highest-value increment for a Gartner-facing claim, because the feedback
+clause is the part most platforms skip.</p>
+
+<p><strong>7. Learning and optimization.</strong> Every material change is issued as a
+numbered version whose row states its own inverse, and each publication creates a new
+approved baseline the next cycle starts from. Learning today is human and structural rather
+than automated: thresholds, queue definitions and rules are tuned against observed
+outcomes, and defects are logged to a standing register instead of being absorbed.</p>
+
+<p><strong>8. Governance and auditability.</strong> This is the strongest layer and the one
+worth leading with. Custody, classification, provenance, named human approval, version
+control, retention and defensibility are expressed as commitments on the
+<a href="https://eveglyphdesign.github.io/enterprise-program-alignment/">Enterprise Program
+Alignment surface</a>, with formal controls behind them. Controlled artifacts carry a
+SHA-256 content hash, a key ID, an ISO-8601 UTC stamp and a verified page extent. Access is
+gated: real dealer data moves only under an executed dealer authorization naming accounts,
+data elements, purpose, method, hosting and retention.</p>
+
+<p>None of this requires access to a working session to inspect. The public proof set is
+the <a href="https://github.com/EVEglyphDesign/decision-intelligence-framework">Decision
+Intelligence Framework</a> &mdash; an eight-page controlled paper against a 96-source
+evidence register &mdash; the
+<a href="https://eveglyphdesign.github.io/enterprise-program-alignment/">Enterprise Program
+Alignment surface</a>, and the
+<a href="https://eveglyphdesign.github.io/scs-sap-gtm/">SCS SAP GTM page</a> with its
+<a href="https://eveglyphdesign.github.io/scs-sap-gtm/dmz/">DMZ boundary companion</a>.</p>
+
+<h2>2. The semantic extension is the real technology step</h2>
+
+<p>This is the part that is not commodity consulting, and it is the reason EVE is different
+from what other firms carry into the same room. We took <span class="accent">SAP's own data
+governance</span> &mdash; ACDOCA as the universal-journal spine, and SAP's classification,
+provenance and control semantics &mdash; and used it as the governing model for information
+that lives <em>outside</em> SAP and carries no comparable controls.</p>
+
+<div class="card">
+  <h3>What is actually built</h3>
+  <p><span class="num">01</span> <strong>A customer-owned SAP reference model.</strong>
+  <a href="https://github.com/EVEglyphDesign/eve-datasphere-sovereign">eve-datasphere-sovereign</a>
+  holds a field-level wave of 58 tables across PM, FI, CO, MM, SD, PP and QM, with ACDOCA
+  as the organizational spine rather than a fresh analytics vocabulary per source
+  system.</p>
+  <p><span class="num">02</span> <strong>Extended, never replaced.</strong> ACDOCA stays
+  the transaction journal. ACDOCI carries customer interactions and ACDOCX carries ESG and
+  profitability effects beside it, so nothing outside the ledger modifies the ledger.</p>
+  <p style="margin-bottom:0"><span class="num">03</span> <strong>Source width is
+  preserved.</strong> CDK dealer fields wider than SAP defaults keep their source-native
+  width and enter a declared widening register, rather than being silently truncated to fit
+  the model.</p>
+</div>
+
+<p>It pays in <span class="accent">both directions</span>, and that is the argument to
+make in front of SAP. The client gets more return on the SAP investment, because the
+semantic model they already paid for is now doing work across the wider estate instead of
+stopping at the application boundary. SAP gets reach into unstructured and edge
+information it could not previously see, without the customer funding an expensive
+integration programme to get there.</p>
+
+<p>Because the extension attaches <em>at the edges</em>, each increment is small, business
+justified, and retrofittable. A client adds the things that make business sense month by
+month, and when a platform upgrade comes round those additions can be picked up into the
+scope of the next major project. <span class="accent">Time to value is the product</span>,
+not a side effect of it.</p>
+
+<p class="pull">EVE lets you apply what is inside SAP to what is outside SAP &mdash; and
+carry the result back in.</p>
+
+<h2>3. Go-to-market: two doors, and you own the asset</h2>
+
+<h3>The publication door &mdash; Lilian</h3>
+
+<p>Lilian Corvington is in peer review on her decision-intelligence-in-PMO paper, anchored
+at Project Management Journal with MIT Sloan Management Review as the executive parallel
+and PMI or ACMP as speaking channels. <strong>EVE is referenced there as the
+standard.</strong> Emerson Rush is her own review vehicle; the IT work behind it is SCS.
+She holds the credentials for Gartner publication, and she will pitch alongside us on any
+qualified lead provided the materials are prepared and she is prepped ahead of the room.
+The SpotlightAR relationship is the amplifier on top of a cited artifact &mdash; analyst
+relations work considerably better pointing at published peer-reviewed work carrying a
+named senior author than at a deck.</p>
+
+<h3>The edge door &mdash; the dealer wedge</h3>
+
+<p>Every vehicle dealer network of scale runs its logistics rules out of a heavily invested,
+heavily customized SAP supply chain, and that is where the rules come from. Above roughly
+twenty rooftops those groups are Salesforce's primary targets. Below that line sits a large
+population running old dealer management systems &mdash; CDK, and three or four peers
+&mdash; which are nothing like SAP, are expensive, and struggle to meet even the
+manufacturers' warranty and service extraction requirements. There is no large US service
+delivery organization specialized in that space.</p>
+
+<p>That imbalance &mdash; a multi-billion-dollar SAP supply chain on one side and a thin
+dealer management system on the other &mdash; is exactly where AI leverage lands first, and
+it is where EVE sits natively as a sidecar rather than as a replacement. Peterbilt Atlantic
+is the live proof: a truck-only warehouse reconciling PACCAR warranty registrations against
+CDK repair-order history on a VIN8 spine, <span class="accent">2,991 units compared</span>,
+exposing P1&ndash;P4 customer-outreach queues with an owner and a next action on every
+row.</p>
+
+<h3>What you are sitting on</h3>
+
+<p>You own EVE. You built it with me on spec and all of the technology is ours. The method
+is portable, the patterns are identical across SAP-core and edge work, the proof is public
+and repository-backed, and the commercial structure stays additive and arm's length &mdash;
+no reseller paper, no SI displacement, no write path into anyone's ledger.</p>
+
+<ul>
+  <li><strong>A cited standard</strong> rather than a marketing claim, with a 96-source
+  evidence register behind it.</li>
+  <li><strong>A named senior author</strong> carrying it into peer review and executive
+  rooms.</li>
+  <li><strong>A repeatable additive layer</strong> that applies the same pattern to the
+  SAP core and to the systems on its edge.</li>
+  <li><strong>A channel position beside SAP and Salesforce</strong> rather than against
+  them, in the segment neither one serves well.</li>
+</ul>
+
+<p>That combination is enterprise value on the SCS balance sheet, not simply a delivery
+capability. It is the difference between selling hours and holding an asset.</p>
+
+<h2>What this note does not claim</h2>
+
+<ul>
+  <li><strong>Gartner coverage is not a commitment.</strong> Analyst-relations access
+  through SpotlightAR is a route to consideration, not an assured mention or placement.</li>
+  <li><strong>Peer review is in progress.</strong> Lilian's paper is under review; the
+  reference to EVE as a standard becomes citable when the paper is accepted, not
+  before.</li>
+  <li><strong>The Datasphere model is a reusable foundation, not a shipped product.</strong>
+  Commercialization follows a narrow governed proof with a named owner, access boundaries,
+  success criteria and a review point.</li>
+  <li><strong>Dealer-side access remains gated.</strong> Real dealer data moves only on an
+  executed dealer authorization naming accounts, data elements, purpose, method, hosting
+  and retention.</li>
+  <li><strong>Segment characterizations are advisory judgment.</strong> The dealer-market
+  and channel reasoning in section 3 is positioning analysis, not verified market
+  research.</li>
+</ul>
+
+  <h2>Sources and provenance</h2>
+  <ul class="srcs"><li><a href="https://www.gartner.com/en/information-technology/glossary/decision-intelligence">Gartner IT Glossary — decision intelligence</a></li>
+<li><a href="https://www.linkedin.com/posts/davidpidsley_decisionintelligence-activity-7338643731249590274-YrIw">David Pidsley (Gartner) — extended DI definition, Hype Cycle for AI 2025</a></li>
+<li><a href="https://www.fico.com/blogs/what-decision-intelligence-software-and-should-you-invest-it">FICO — Gartner definitions of DI and decision intelligence platforms</a></li>
+<li><a href="https://github.com/EVEglyphDesign/decision-intelligence-framework">Decision Intelligence Framework — controlled paper and 96-source register</a></li>
+<li><a href="https://github.com/EVEglyphDesign/eve-datasphere-sovereign">EVE Datasphere Sovereign — customer-owned SAP reference model</a></li>
+<li><a href="https://eveglyphdesign.github.io/enterprise-program-alignment/">Enterprise Program Alignment — public service surface</a></li>
+<li><a href="https://github.com/EVEglyphDesign/enterprise-program-alignment/blob/main/DECISIONS.md">Enterprise Program Alignment — decision canon</a></li>
+<li><a href="https://eveglyphdesign.github.io/scs-sap-gtm/">Steel Cloud Solutions — SAP North America additive layer</a></li>
+<li><a href="https://eveglyphdesign.github.io/scs-sap-gtm/dmz/">EVE is DMZ-bound by definition — EgD-EVE-DMZ-001</a></li>
+<li><a href="https://eveglyphdesign.github.io/eve-glyph-boot-contract/">EVEglyphDesign Executive Boot Contract — EgD-BOOT-001</a></li></ul>
+  <p class="deck">Evidence classification. Gartner's definitions are quoted from the linked public sources; no Gartner subscription research is reproduced. EVE capability statements are grounded in the committed repositories linked above and in delivered Peterbilt Atlantic work. Market segmentation, channel positioning, valuation implications and the analyst-relations route are advisory judgments of positioning, not verified facts.</p>
+
+  <hr class="rule">
+
+  <div class="stamp">
+    EgD-EVE-DI-001 · EVE as an additive decision-intelligence layer<br>
+    Companion notes: <a href="../">the engagement model</a> ·
+    <a href="../dmz/">EVE is DMZ-bound by definition</a><br>
+    Prepared by <a href="https://github.com/EVEglyphDesign/scs-sap-gtm">EVEglyphDesign · scs-sap-gtm</a> ·
+    <a href="https://eveglyphdesign.github.io/eve-glyph-boot-contract/">Operating canon</a><br>
+    <em>Pour le bien-être du peuple.</em>
+  </div>
+</main>
+</body>
+</html>
