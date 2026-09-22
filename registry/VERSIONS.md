@@ -10,6 +10,7 @@ Monotonic. It only grows. Every row states its inverse (EgD-BOOT-005).
 | 1.2.1 | L1.2.1 | `EgD-EVE-DI-001` rev 2 — "three lifecycle movements" corrected to "four lifecycle capabilities Gartner names"; all three surfaces and the hash register rebuilt | `git revert 318f05f` |
 | 1.3 | L2.0 | `docs/index.html` rewritten to lead with the arm's-length advisory model and the two service shapes; presales-conversion framing dropped. Old copy captured in git history for restore | `git checkout <previous commit>:docs/index.html -- docs/index.html` |
 | 1.3.1 | L2.1 | `docs/jason/index.html` added — Datasphere adoption lane briefing for Jason: micro / mid-cap / strategic sizing, the two services, senior-advisor bench with Lillian-type profile reference | `git rm docs/jason/index.html` |
+| 1.3.2 | L2.2 | `docs/jason/BRIEFING.md` added — plain Markdown briefing suitable for sending or pasting; carries the same substance as the web page | `git rm docs/jason/BRIEFING.md` |
 
 ## Build order for `EgD-EVE-DI-001`
 
