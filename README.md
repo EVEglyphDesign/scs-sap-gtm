@@ -9,16 +9,37 @@ Steel Cloud Solutions — an **additive layer** for the SAP North America presal
 
 ## Positioning in one line
 
-Steel Cloud Solutions would sit next to SAP presales as a Decision Intelligence Center
-of Excellence — SAP-first, hyperscaler-fluent, delivered into an existing trust
-relationship as a processor, and explicitly non-displacing to any SI or partner already
-on the account.
+Steel Cloud Solutions can sit beside SAP North America presales as an **arm's-length
+advisory layer**, helping mid-cap and complex-account customers get real value out of
+the SAP investment they already own — with **Datasphere as the strategic keystone**
+and the semantic model kept inside SAP.
+
+## Two service shapes
+
+- **Service A — Adoption & Licensing-Value Review.** Third-party assessment of what the
+  customer already owns on their SAP entitlement and why adoption has stalled
+  internally. Independent of SAP so it reads as value discovery, not audit.
+- **Service B — Executive Decision-Intelligence Assessment.** Framework-driven
+  assessment delivered by a senior industry-recognised advisor from the SCS bench (a
+  Lillian Richemont-type profile, matched by industry). SCS does the legwork; the
+  senior advisor signs the recommendations. All work inside the customer's four walls.
 
 ## Why it protects SAP
 
-The strategic risk in enterprise AI is customers lifting the semantic model out of SAP
-and porting it into a hyperscaler. SCS represents SAP's semantic capabilities firmly
-inside the customer's AI conversation so the model stays where it belongs.
+Once the customer's data lands in Datasphere the semantic model stays inside SAP —
+the ground floor of Business Data Cloud, the bridge for customers retiring BW and
+Analytics for Office, the gate to SAC and Databricks with SAP still controlling
+access and meaning. Every account that adopts Datasphere is an account SAP does not
+lose to a hyperscaler lift-out.
+
+## Jason briefing
+
+[**The Datasphere adoption lane**](https://eveglyphdesign.github.io/scs-sap-gtm/jason/) —
+the specific micro / mid-cap / strategic sizing of the Datasphere adoption challenge,
+the two service shapes, and the senior-advisor bench model. Recipient-facing briefing
+for Jason Porterfield.
+
+- Public page: <https://eveglyphdesign.github.io/scs-sap-gtm/jason/>
 
 ## Companion note — EgD-EVE-DMZ-001
 
