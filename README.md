@@ -14,15 +14,24 @@ advisory layer**, helping mid-cap and complex-account customers get real value o
 the SAP investment they already own — with **Datasphere as the strategic keystone**
 and the semantic model kept inside SAP.
 
-## Two service shapes
+## Three service shapes
 
-- **Service A — Adoption & Licensing-Value Review.** Third-party assessment of what the
-  customer already owns on their SAP entitlement and why adoption has stalled
-  internally. Independent of SAP so it reads as value discovery, not audit.
-- **Service B — Executive Decision-Intelligence Assessment.** Framework-driven
-  assessment delivered by a senior industry-recognised advisor from the SCS bench (a
-  Lillian Richemont-type profile, matched by industry). SCS does the legwork; the
-  senior advisor signs the recommendations. All work inside the customer's four walls.
+- **Service A — Datasphere technical support and product demonstration.** SCS goes into
+  the customer's non-productive systems and stands up the Datasphere functionality the
+  customer would be getting on the licence — typically a test system pointed at
+  production, so the customer's SMEs get a working preview against their own real data
+  ahead of the buying decision.
+- **Service B — Business-case build for the SAP decision.** A directed decision-support
+  engagement, scoped to whatever SAP decision the customer is working through. SCS uses
+  our structured tools inside the customer's four walls to work backwards from that
+  decision to the economic justification the customer's own executives can carry.
+  Decision support, not audit — no entitlement pull, no adoption grading.
+- **Service C — Executive decision-intelligence assessment.** Framework-driven,
+  delivered by a published, highly respected industry advisor drawn from a peer
+  network of senior SAP subject-matter experts who have worked together for decades
+  and trust each other. SCS finds the person among us most appropriate to the
+  account and industry and runs the working surface underneath; the senior advisor
+  signs the recommendations. All work inside the customer's four walls.
 
 ## Why it protects SAP
 
