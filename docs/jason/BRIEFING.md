@@ -52,6 +52,17 @@ intelligent-enterprise ground floor while the customer still gets the analytics
 and AI options they want on top. Every account that adopts it is an account SAP
 does not lose to a hyperscaler lift-out.
 
+The specific play SAP is losing on some accounts: the hyperscaler side pushes
+*replication flows out of SAP* into their own infrastructure and then rebuilds
+the semantic model on their side. Several SIs and hybrid-hyperscaler vendors are
+running the same play. In that scenario the customer loses the SAP semantic
+model as the access spine for enterprise data — the user-level access controls
+SAP has built into that spine go with it. That is the strategic battle, and it
+is where an arm's-length partner like SCS can call the trade honestly for the
+customer, because we are not on either vendor's paper. We have seen this play
+run at a live enterprise account and it is exactly the shape Datasphere is
+meant to answer.
+
 ---
 
 ## How the first meeting works
