@@ -27,11 +27,12 @@ and the semantic model kept inside SAP.
   decision to the economic justification the customer's own executives can carry.
   Decision support, not audit — no entitlement pull, no adoption grading.
 - **Service C — Executive decision-intelligence assessment.** Framework-driven,
-  delivered by a published, highly respected industry advisor drawn from a peer
-  network of senior SAP subject-matter experts who have worked together for decades
-  and trust each other. SCS finds the person among us most appropriate to the
-  account and industry and runs the working surface underneath; the senior advisor
-  signs the recommendations. All work inside the customer's four walls.
+  delivered by one of the senior subject matter experts within our consulting group
+  — a partnership of small consulting firms operating under a general partnership
+  agreement with SCS. Structured for a specific capacity: stated hours, stated
+  interview and meeting count, stated feedback format, one operational blueprint,
+  one document, one bill. Every recording and transcript handed back in a
+  repository. All work inside the customer's four walls.
 
 ## Why it protects SAP
 

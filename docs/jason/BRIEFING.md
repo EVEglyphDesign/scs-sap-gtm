@@ -94,14 +94,20 @@ For accounts on a major SAP transformation, the full structured piece: a
 **published, highly respected industry advisor** signs the recommendations, and
 SCS runs the working surface underneath.
 
-SCS draws the advisor from a network of senior SAP subject-matter experts who
-have worked together for decades and trust each other; we find the person among
-us who is most appropriate to lead the assessment for that account and industry.
-Behind the signature, our team runs data gathering, session hosting, recording,
-structured capture, blueprint drafting, and repository custody — all inside the
-customer's four walls. The output is one operational blueprint tying the
-customer's real transaction and process data to the transformation reasoning
-that the SI and SAP are already discussing.
+The advisor is one of the senior subject matter experts within our consulting
+group — a partnership of small consulting firms operating under a general
+partnership agreement with SCS, which is how we can put the right person on the
+right account quickly.
+
+SCS delivers the assessment in a structured form the customer can buy on a
+specific capacity. We tell the customer up front: this many hours, this many
+interviews, this many meetings, feedback in this format, this set of questions
+answered. We hand back every recording and every transcript in a repository,
+and we produce one operational blueprint tying the customer's real transaction
+and process data to the transformation reasoning the SI and SAP are already
+discussing. **One document, one bill** — nothing more straightforward for the
+customer to engage with. It is a way of commercialising senior-advisor work
+that has not really been done before, and it is what SCS delivers.
 
 ---
 
