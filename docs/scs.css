@@ -1,0 +1,166 @@
+/* SCS · Decision Intelligence surface template
+ * Matches the SCS SOW / MSA PDF template: teal on cream, Fraunces display,
+ * Inter body. EVE Glyph cream-and-orange is not used on SCS surfaces.
+ * © 2026 Steel Cloud Solutions. Pour le bien-être du peuple.
+ */
+
+:root {
+  --scs-cream:    #f6f6f2;
+  --scs-cream-2:  #ecebe4;
+  --scs-ink:      #28241c;
+  --scs-line:     #d5d3c8;
+  --scs-mute:     #6a6f70;
+  --scs-teal:     #1f808c;
+  --scs-teal-2:   #196a74;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0; padding: 0;
+  background: var(--scs-cream);
+  color: var(--scs-ink);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: 17px; line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  word-wrap: break-word; overflow-wrap: break-word;
+}
+
+a {
+  color: var(--scs-teal);
+  text-decoration: underline;
+  text-decoration-color: var(--scs-teal);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+}
+a:hover { color: var(--scs-teal-2); text-decoration-color: var(--scs-teal-2); }
+
+main {
+  width: 100%; max-width: 700px;
+  margin: 0 auto; padding: 40px 22px 60px;
+}
+
+/* SCS running mark, replaces the EVE Glyph kicker */
+.scs-mark {
+  font-family: 'Inter', sans-serif;
+  font-size: 11.5px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--scs-teal);
+  border-bottom: 1px solid var(--scs-line);
+  padding: 12px 0 14px;
+  margin: -8px 0 26px;
+}
+.scs-mark strong { font-weight: 600; letter-spacing: 0.2em; }
+
+header { border-bottom: 1px solid var(--scs-line); padding-bottom: 22px; margin-bottom: 26px; }
+
+.kicker {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px; letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--scs-mute);
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 600; font-size: 32px;
+  line-height: 1.15;
+  margin: 0 0 10px;
+  letter-spacing: -0.01em;
+  color: var(--scs-ink);
+}
+
+.sub {
+  font-family: 'Fraunces', Georgia, serif;
+  font-style: italic; font-weight: 400;
+  color: var(--scs-mute);
+  font-size: 18px; margin: 0;
+}
+
+h2 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 600; font-size: 22px;
+  margin: 34px 0 10px;
+  letter-spacing: -0.005em;
+  color: var(--scs-teal);
+}
+
+h3 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 600; font-size: 18px;
+  margin: 20px 0 6px;
+  color: var(--scs-ink);
+}
+
+p { margin: 0 0 14px; }
+.lead { font-size: 18.5px; line-height: 1.5; }
+
+ul { margin: 6px 0 14px; padding-left: 20px; }
+li { margin: 6px 0; }
+
+.accent {
+  color: var(--scs-teal);
+  font-weight: 600;
+}
+
+.rule { height: 1px; background: var(--scs-line); margin: 28px 0; border: 0; }
+
+.card {
+  background: var(--scs-cream-2);
+  border: 1px solid var(--scs-line);
+  border-radius: 4px;
+  padding: 16px 18px;
+  margin: 14px 0;
+}
+.card h3 { margin-top: 0; color: var(--scs-teal); }
+
+.pull {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 500; font-size: 20px;
+  line-height: 1.32; color: var(--scs-ink);
+  border-left: 3px solid var(--scs-teal);
+  padding: 4px 0 4px 16px;
+  margin: 20px 0;
+}
+
+table { width: 100%; border-collapse: collapse; margin: 14px 0 20px; font-size: 15px; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--scs-line); vertical-align: top; }
+th { color: var(--scs-teal); font-family: 'Inter', sans-serif; font-weight: 600; font-size: 13.5px; letter-spacing: 0.02em; text-transform: uppercase; }
+
+.stamp {
+  margin-top: 40px;
+  padding-top: 16px;
+  border-top: 1px solid var(--scs-line);
+  color: var(--scs-mute);
+  font-size: 13px;
+  line-height: 1.55;
+}
+.stamp em { font-family: 'Fraunces', Georgia, serif; font-style: italic; }
+.stamp a { color: var(--scs-mute); text-decoration-color: var(--scs-line); }
+.stamp a:hover { color: var(--scs-teal); text-decoration-color: var(--scs-teal); }
+
+/* Size cards on the Jason briefing */
+.size-card {
+  background: var(--scs-cream-2);
+  border: 1px solid var(--scs-line);
+  border-left: 3px solid var(--scs-teal);
+  border-radius: 4px;
+  padding: 16px 18px;
+  margin: 14px 0;
+}
+.size-card h3 { color: var(--scs-teal); margin-top: 0; }
+
+@media (max-width: 600px) {
+  main { padding: 28px 18px 52px; }
+  h1 { font-size: 26px; letter-spacing: -0.015em; }
+  h2 { font-size: 20px; }
+  h3 { font-size: 17px; }
+  .lead { font-size: 17.5px; }
+  .pull { font-size: 18px; padding-left: 14px; }
+  body { font-size: 16.5px; }
+  .kicker, .scs-mark { font-size: 11px; }
+  .card, .size-card { padding: 14px 15px; }
+}
