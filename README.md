@@ -14,6 +14,14 @@ advisory layer**, helping mid-cap and complex-account customers get real value o
 the SAP investment they already own — with **Datasphere as the strategic keystone**
 and the semantic model kept inside SAP.
 
+## First meeting is free
+
+Before anything is billed, SCS runs a free discovery meeting: customer sends
+materials ahead of time, we come in with a pre-discovery outline, session is
+recorded, and the deliverable is meeting notes plus — if there is a fit — a
+proposal scoped strictly to Services A, B, or C. Classic pipeline. Any SAP-side
+conversation happens after the meeting, not during it.
+
 ## Three service shapes
 
 - **Service A — Datasphere technical support and product demonstration.** SCS goes into

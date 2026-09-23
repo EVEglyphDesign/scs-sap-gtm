@@ -54,6 +54,20 @@ does not lose to a hyperscaler lift-out.
 
 ---
 
+## How the first meeting works
+
+Before anything is billed, SCS runs a **free discovery meeting** with the
+customer. Classic pipeline. The customer sends whatever materials they want us to
+look at ahead of time, we come in with a pre-discovery outline against those
+materials, we ask to record the session, and we take notes.
+
+Out the other side, the customer gets meeting notes and — if there is a fit — a
+proposal scoped strictly to Services A, B, or C below. Nothing outside those
+categories. Any SAP-side conversation on the account happens after that meeting,
+not during it.
+
+---
+
 ## What Steel Cloud Solutions is offering
 
 Three service shapes. All three run inside the customer's four walls, with the
